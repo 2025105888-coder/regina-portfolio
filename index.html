@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regina Allyois Violeta | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <a href="#home" class="logo">Regina<span>Violeta</span> ✦</a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Buka navigasi">☰</button>
+
+    <nav id="navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#project" class="nav-link">Project</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <a href="#contact" class="talk-button">Let's Talk ↗</a>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section class="hero" id="home">
+
+      <img class="hero-background" src="home.png" alt="" aria-hidden="true" onerror="this.style.display='none'">
+
+      <div class="hero-text reveal">
+        <p class="eyebrow">HELLO, WELCOME TO MY SPACE ✦</p>
+
+        <h1>
+          Ideas become<br>
+          beautiful <em>experiences.</em>
+        </h1>
+
+        <p class="description">
+          Hi, I'm Regina, an Information Systems student passionate about technology, creativity, and business. I'm interested in learning data analytics, marketing and sales strategies, and digital drawing to combine analytical thinking with creativity.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#project" class="primary-button">
+            Explore My Work ↗
+          </a>
+          <a href="#about" class="secondary-button">
+            About Me ↓
+          </a>
+        </div>
+
+        <p class="availability">
+          <span></span> Open to learning and collaboration
+        </p>
+      </div>
+
+      <!-- PROFILE PHOTO: ganti file foto di folder images -->
+      <div class="hero-visual reveal">
+        <div class="profile-frame">
+          <img
+            src="profile.png"
+            alt="Foto profil Regina Allyois Violeta"
+            class="profile-photo"
+            onerror="this.classList.add('image-missing')"
+          >
+        </div>
+        <div class="floating-card floating-top">✿ Creative Mind</div>
+        <div class="floating-card floating-bottom">♡ Made with care</div>
+      </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+
+      <div class="about-heading reveal">
+        <p class="eyebrow">A LITTLE INTRODUCTION ✦</p>
+        <h2>Curious mind,<br><em>creative heart.</em></h2>
+        <p class="muted">
+          Get to know me and the skills I'm developing.
+        </p>
+      </div>
+
+      <div class="about-description reveal">
+        <span class="small-label">01 / ABOUT ME</span>
+
+        <h3>
+          Hi, I'm <span>Regina Allyois Violeta</span> — a student
+          exploring design, information systems, and technology.
+        </h3>
+
+        <p>
+          I enjoy learning new tools, solving problems, and
+          turning ideas into useful digital experiences.
+          This portfolio showcases my learning journey and projects.
+        </p>
+
+        <a href="#contact" class="text-link">Let's connect ↗</a>
+      </div>
+
+      <!-- SKILL CHART -->
+      <div class="skills-card reveal">
+        <p class="eyebrow">MY GROWING TOOLKIT</p>
+        <h3>Skills & Strengths</h3>
+
+        <div class="chart-container">
+          <canvas id="skillsChart"
+            aria-label="Grafik keahlian"
+            role="img"></canvas>
+        </div>
+
+        <div class="chart-legend">
+          <span><i class="pink-dot"></i> Design</span>
+          <span><i class="blue-dot"></i> Technology</span>
+        </div>
+
+        <p class="chart-note">
+          Skill levels are editable in script.js.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- PROJECT -->
+    <section class="projects section" id="project">
+
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">A FEW THINGS I'VE MADE ✦</p>
+          <h2>Selected <em>projects.</em></h2>
+        </div>
+
+        <p class="muted">
+          Every project is a new opportunity to learn and grow.
+        </p>
+      </div>
+
+      <div class="project-grid">
+
+        <!-- PROJECT 1 -->
+        <article class="project-card reveal">
+          <div class="project-image-area pink-tint">
+            <img
+              src="marketing.png"
+              alt="Preview project 1"
+              class="project-image"
+              onerror="this.classList.add('image-missing')"
+            >
+          </div>
+          <div class="project-info">
+            <div>
+              <p class="project-category">BUSINESS</p>
+              <h3 contenteditable="true">Marketing / Sales strategies</h3>
+            </div>
+            <span class="project-arrow">↗</span>
+          </div>
+
+          <p class="project-description" contenteditable="true">
+            My project focuses on developing a local perfume business by promoting products, creating marketing strategies, and building customer relationships. The goal is to increase brand awareness and sales while learning about business development, digital marketing, customer behavior, and sales strategies. 
+          </p>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="project-card reveal">
+          <div class="project-image-area blue-tint">
+            <img
+              src="design.png"
+              alt="Preview project 2"
+              class="project-image"
+              onerror="this.classList.add('image-missing')"
+            >
+          </div>
+          <div class="project-info">
+            <div>
+              <p class="project-category">DESIGN</p>
+              <h3 contenteditable="true">Digital Hand Drawwing </h3>
+            </div>
+            <span class="project-arrow">↗</span>
+          </div>
+
+          <p class="project-description" contenteditable="true">
+            This project showcases my digital hand drawing skills through creative illustrations and visual experimentation. My goal is to express ideas through art while improving my creativity, attention to detail, and digital drawing techniques.
+          </p>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="project-card reveal">
+          <div class="project-image-area lilac-tint">
+            <img
+              src="organisasi.png"
+              alt="Preview project 3"
+              class="project-image"
+              onerror="this.classList.add('image-missing')"
+            >
+          </div>
+          <div class="project-info">
+            <div>
+              <p class="project-category">ORGANISATION</p>
+              <h3 contenteditable="true">Project Leader ORBIT 2026</h3>
+            </div>
+            <span class="project-arrow">↗</span>
+          </div>
+
+          <p class="project-description" contenteditable="true">
+            As the project leader, my main challenge was creating an engaging and enjoyable orientation program for new students while ensuring everything ran smoothly. I coordinated the team, managed event preparations, and ensured each activity was well-organized, resulting in a successful orientation event that received positive feedback from both the university and new students.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+
+      <div class="contact-intro reveal">
+        <p class="eyebrow">HAVE A GOOD IDEA? ✦</p>
+
+        <h2>Let's make<br>something <em>lovely.</em></h2>
+
+        <p class="muted">
+          Have a project, opportunity, or just want to say hello?
+          I'd love to hear from you.
+        </p>
+
+        <div class="contact-note">
+          <span class="contact-heart">♡</span>
+          <div>
+            <strong>Let's start a conversation.</strong>
+            <p>Fill in the form to get in touch.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT FORM -->
+      <form class="contact-form reveal" id="contactForm">
+
+        <p class="small-label">02 / SAY HELLO</p>
+        <h3>Send me a message</h3>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name"
+              placeholder="Your name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone"
+              placeholder="+62 812..." required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email"
+            placeholder="hello@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message *</label>
+          <textarea id="message" name="message" rows="5"
+            placeholder="Write your message here..."
+            required></textarea>
+        </div>
+
+        <button type="submit" class="primary-button submit-button">
+          Prepare Message ↗
+        </button>
+
+        <p class="form-status" id="formStatus" aria-live="polite"></p>
+
+        <p class="form-note">
+          Submitting opens your email application. Replace the demo
+          email address in script.js with your own.
+        </p>
+
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a href="#home" class="logo">Regina<span>Violeta</span> ✦</a>
+    <p>Made with love and curiosity ♡</p>
+    <a href="#home" class="back-top">BACK TO TOP ↑</a>
+    <small>© <span id="year"></span> REGINA ALLYOIS VIOLETA</small>
+  </footer>
+
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
